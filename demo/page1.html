@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PAGE 1 - votum page transitions</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link href="../src/css/page.transition.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../src/js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../src/js/domparser.polyfill.js"></script>
+    <script type="text/javascript" src="../src/js/page.transition.min.js"></script>
+</head>
+<body>
+<div id="wrapper" class="page1">
+    <header>
+        <a href="index.html"><img src="img/votum.gif" title="votum page transition plugin"/></a>
+
+        <h1>Page Transitions</h1>
+    </header>
+    <div id="main">
+        <p>EXAMPLE PAGE 2</p>
+        <img src="img/page2.jpg" width="400"/>
+
+        <p>&nbsp;</p>
+    </div>
+    <footer>
+        <p>CLICK through example links and see our page transition work ...</p>
+        <ul>
+            <li><a href="index.html">start</a></li>
+            <li>//</li>
+            <li><a href="page1.html">page 1</a></li>
+            <li>//</li>
+            <li><a href="page2.html">page 2</a></li>
+            <li>//</li>
+            <li><a href="index.html" data-no-slide>start (no-slide)</a></li>
+            <li>//</li>
+            <li><a href="http://www.votum.de" target="_blank"><strong>votum.de</strong></a></li>
+        </ul>
+    </footer>
+</div>
+<script>
+    jQuery(document).ready(function () {
+        pageTransition({
+            effectClass: 'slide',
+            browserNavEffectClass: 'slide reverse',
+            afterSlideFunction: function () {
+
+            },
+            loaderId: 'ajax-loader',
+            noSlideAttr: 'data-no-slide'
+        });
+    });
+</script>
+</body>
+</html>
