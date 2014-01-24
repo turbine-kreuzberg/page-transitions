@@ -21,7 +21,7 @@
 - include js files in head information of your template: jQuery 2.0.3 and later, domparser.polyfill.js and page.transition.min.js
 - include css file in head information of your template: page.transition.css
 
-
+####
 ##### EXAMPLE call of pageTransition function with default options
 
     <script type="text/javascript">
