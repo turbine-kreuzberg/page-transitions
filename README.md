@@ -21,6 +21,7 @@
 - include js files in head information of your template: jQuery 2.0.3 and later, domparser.polyfill.js and page.transition.min.js
 - include css file in head information of your template: page.transition.css
 
+
 ##### EXAMPLE call of pageTransition function with default options
 
     <script type="text/javascript">
@@ -38,6 +39,7 @@
         });
     </script>
 
+
 ##### Options description
 
 - effectClass: css class how the sliding should behave (look to page.transition.css for what classes are given - feel free to write your own)
@@ -46,6 +48,7 @@
 - loaderId: id of your ajax loader container which will be appended to your page before slide
 - noSlideAttr: data-attribute which makes links not sliding
 - contentContainer: still in work (not working in a good way right now), for sliding a special container and not the whole body
+
 
 ##### Good to know
 
