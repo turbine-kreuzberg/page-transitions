@@ -19,7 +19,7 @@
 
 #### How to use
 - include js files in head information of your template: jQuery 2.0.3 and later, domparser.polyfill.js and page.transition.min.js
-- include css file in head information of your template: page.transition.css  
+- include css file in head information of your template: page.transition.css
 
 ##### EXAMPLE call of pageTransition function with default options
 
@@ -56,4 +56,5 @@
 - i don't know if i really had all exceptions in my mind, but i will extend this plugin soon to make it perfect ;-)
 
 ## Further notes
+January 2014 - v0.1
 Created and modified by [Ricardo Hildebrand] and developed at [Votum](http://www.votum.de/) in Berlin, Germany.

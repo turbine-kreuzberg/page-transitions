@@ -41,9 +41,13 @@ a {
     min-height: 500px;
 }
 
+footer ul {
+    padding-bottom: 20px;
+}
+
 footer ul li {
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
     list-style: none;
 }
 
@@ -56,5 +60,11 @@ footer ul li {
     top: 28%;
     left: 50%;
     margin-left: -64px;
+}
+
+p.footnote {
+    padding-top: 10px;
+    font-size: 12px;
+    border-top: 1px solid #eee;
 }
 
