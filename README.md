@@ -13,6 +13,9 @@
 - inject additional functions for call after slide finish
 - in work: possibility to give a special content container instead of whole body for slide
 
+## DEMO
+- http://demo.dev.votum.local/page-transitions/demo/
+
 ## Getting Started
 #### Requirements
 - domparser polyfill for crossbrowser support (js included), jQuery 2.0.3 and later (not included)
