@@ -16,9 +16,6 @@
 ## DEMO
 - http://demo.dev.votum.local/page-transitions/demo/
 
-#### Direct Download (zip file)
-- http://wissen.votum.de/wp-content/uploads/2014/01/votum-page-transitions.zip
-
 ## Getting Started
 #### Requirements
 - domparser polyfill for crossbrowser support (js included), jQuery 2.0.3 and later (not included)
