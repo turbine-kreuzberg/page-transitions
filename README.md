@@ -61,6 +61,13 @@
 - same issue with links that have hashtags in its address (anchor, js stuff ...)
 - i don't know if i really had all exceptions in my mind, but i will extend this plugin soon to make it perfect ;-)
 
+## Version & Update  notes
+#### 24. January 2014
+- v0.1
+
+#### 29. January 2014
+- v0.1.1
+- IE Fix // Transition styles for IE
+
 ## Further notes
-January 2014 - v0.1
 Created and modified by [Ricardo Hildebrand] and developed at [Votum](http://www.votum.de/) in Berlin, Germany.
