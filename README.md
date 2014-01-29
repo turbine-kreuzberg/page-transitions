@@ -1,6 +1,6 @@
-# Votum Page Transition Plugin v0.1
+# Votum Page Transition Plugin v0.1.1
 
-### A small lightweight javascript/jQuery function for page transitions
+### An easy, small and lightweight Javascript/jQuery plugin for page transitions / sliding pages on mobile websites.
 
 ## Features
 - page transitions with slide effect
@@ -67,7 +67,7 @@
 
 #### 29. January 2014
 - v0.1.1
-- IE Fix // Transition styles for IE
+- Compatibility for Internet Explorer version 10 and higher // Transition styles for IE
 
 ## Further notes
 Created and modified by [Ricardo Hildebrand] and developed at [Votum](http://www.votum.de/) in Berlin, Germany.

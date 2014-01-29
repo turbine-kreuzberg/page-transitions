@@ -1,5 +1,5 @@
 /*
- *	Votum Page Transition Plugin v0.1
+ *	Votum Page Transition Plugin v0.1.1
  *
  *  @requires jQuery-2.0.3 or later
  *  @requires domparser.polyfill.js for cross browser compatibility

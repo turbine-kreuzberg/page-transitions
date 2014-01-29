@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>INDEX - votum page transitions</title>
+    <title>Votum page transitions plugin DEMO</title>
     <link href="styles.css" rel="stylesheet" type="text/css"/>
     <link href="../src/css/page.transition.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="../src/js/jquery-2.0.3.min.js"></script>
@@ -16,10 +16,13 @@
         <h1>Page Transitions</h1>
     </header>
     <div id="main">
-        <p>EXAMPLE PAGE 1</p>
+        <p>An easy,small and lightweight Javascript/jQuery Plugin for page transitions/sliding pages on mobile
+            websites.</p>
         <img src="img/page1.jpg" width="450"/>
 
-        <p>&nbsp;</p>
+        <p><img src="http://git.votum-media.net/assets/logo-black.png" width="50"/><a
+                href="http://git.votum-media.net/vtm-frontend/page-transitions" target="_blank">Visit our Votum Github
+            for this project.</a></p>
     </div>
     <footer>
         <p>CLICK through example links see our page transition work ...</p>
@@ -34,23 +37,21 @@
             <li>//</li>
             <li><a href="http://www.votum.de" target="_blank"><strong>votum.de</strong></a></li>
         </ul>
-        <p class="footnote">January, 2014 - by Ricardo Hildebrand (ricardo.hildebrand@votum.de) <br/> <a
-                href="http://git.votum-media.net/vtm-frontend/page-transitions" target="_blank">Go to page transition
-            project at votum internal github</a></p>
+        <p class="footnote">&copy; 2014 | Ricardo Hildebrand (ricardo.hildebrand@votum.de)</p>
     </footer>
 </div>
 <script>
-    jQuery(document).ready(function () {
-        pageTransition({
+    jQuery( document ).ready( function() {
+        pageTransition( {
             effectClass: 'slide',
             browserNavEffectClass: 'slide reverse',
-            afterSlideFunction: function () {
+            afterSlideFunction: function() {
                 /* do some stuff after slide here*/
             },
             loaderId: 'ajax-loader',
             noSlideAttr: 'data-no-slide'
-        });
-    });
+        } );
+    } );
 </script>
 </body>
 </html>

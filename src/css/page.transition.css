@@ -1,3 +1,5 @@
+/* Votum Page Transition Plugin v0.1.1 Stylesheet*/
+
 .in, .out {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
