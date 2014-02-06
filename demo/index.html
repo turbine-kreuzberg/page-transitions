@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Votum page transitions plugin DEMO</title>
+    <title>Index - Votum page transitions plugin DEMO</title>
     <link href="styles.css" rel="stylesheet" type="text/css"/>
     <link href="../src/css/page.transition.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="../src/js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript" src="../src/js/domparser.polyfill.js"></script>
     <script type="text/javascript" src="../src/js/page.transition.min.js"></script>
 </head>
@@ -16,7 +15,7 @@
         <h1>Page Transitions</h1>
     </header>
     <div id="main">
-        <p>An easy,small and lightweight Javascript/jQuery Plugin for page transitions/sliding pages on mobile
+        <p>An easy,small and lightweight Javascript Plugin for page transitions/sliding pages on mobile
             websites.</p>
         <img src="img/page1.jpg" width="450"/>
 
@@ -41,17 +40,18 @@
     </footer>
 </div>
 <script>
-    jQuery( document ).ready( function() {
-        pageTransition( {
-            effectClass: 'slide',
-            browserNavEffectClass: 'slide reverse',
-            afterSlideFunction: function() {
-                /* do some stuff after slide here*/
-            },
-            loaderId: 'ajax-loader',
-            noSlideAttr: 'data-no-slide'
-        } );
-    } );
+    pageTransition({
+        effectClasses: [ 'slide' ],
+        effectClassesReverse: [ 'slide', 'reverse' ],
+        afterSlideFunction: function() {
+            /* Placeholder for a callback to get executed after each page transition. */
+        },
+        ajaxLoader: 'ajax-loader',
+        noSlideAttr: 'data-no-slide',
+        contentContainerSelector: 'body',
+        cssSlideDuration: 705,
+        headElementsToReplace: 'meta, link, title'
+    });
 </script>
 </body>
 </html>
