@@ -16,6 +16,9 @@ function pageTransition( userOptions ) {
   var options = {
     effectClasses: [ 'slide' ],
     effectClassesReverse: [ 'slide', 'reverse' ],
+    beforeSlideFunction: function() {
+      /* Placeholder for a callback to get executed before each page transition. */
+    },
     afterSlideFunction: function() {
       /* Placeholder for a callback to get executed after each page transition. */
     },
@@ -92,6 +95,9 @@ function pageTransition( userOptions ) {
    * @param {Boolean} pushstate
    */
   function slideTo( url, effectClasses, pushstate ) {
+
+    //call users beforeSlideFunction
+    options.beforeSlideFunction();
 
     /* prepare the old and new content containers */
     var oldContentContainer = document.querySelector( options.contentContainerSelector );
