@@ -9,6 +9,8 @@
  * @copyright Copyright (c) 2014 Votum media GmbH
  * @link      http://git.votum-media.net/vtm-frontend/page-transitions/tree/master
  *
+ * @todo: page transitions as js module (https://github.com/umdjs/umd/blob/master/amdWeb.js)
+ *
  */
 function pageTransition( userOptions ) {
 
@@ -30,12 +32,16 @@ function pageTransition( userOptions ) {
   };
 
   // merge default and userOptions
-  Object.prototype.extend = function(options,userOptions) {
-    for (var property in userOptions)
-      options[property] = userOptions[property];
+  var mergeOptions = function( options, userOptions ) {
+    for( var option in userOptions )
+      options[option] = userOptions[option];
     return options;
   };
-  options.extend(userOptions);
+  mergeOptions( options, userOptions );
+
+  /* create ajax loader element */
+  var ajaxLoader = document.createElement( 'div' );
+  ajaxLoader.id = options.ajaxLoader;
 
   //bind user options
   var initialSlide = false;
@@ -102,10 +108,8 @@ function pageTransition( userOptions ) {
     /* prepare the old and new content containers */
     var oldContentContainer = document.querySelector( options.contentContainerSelector );
 
-    /* create and append ajax loader element */
-    var ajaxLoader = document.createElement('div');
-    ajaxLoader.id = options.ajaxLoader;
-    oldContentContainer.appendChild(ajaxLoader);
+    /* append ajax loader to old container */
+    oldContentContainer.appendChild( ajaxLoader );
 
     oldContentContainer.style.zIndex = 2;
     addManyClasses( oldContentContainer.classList, effectClasses );
@@ -195,8 +199,7 @@ function pageTransition( userOptions ) {
   /**
    * listen to click events and slide or do exceptional stuff
    */
-  document.addEventListener( 'click', checkClickEvent, false );
-  function checkClickEvent( e ) {
+  document.addEventListener( 'click', function( e ) {
     if( e.target.tagName === 'A' ) {
       var link = e.target,
         url = link.getAttribute( 'href' );
@@ -219,8 +222,7 @@ function pageTransition( userOptions ) {
     } else {
       return;
     }
-  }
-
+  }, false );
 
 }
 
