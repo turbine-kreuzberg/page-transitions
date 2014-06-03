@@ -1,16 +1,15 @@
 /**
- * Votum Page Transition Plugin v0.2
+ * VOTUM Page Transition Plugin v0.2
  *
  * @requires domparser.polyfill.js for cross browser compatibility
  * @requires page.transition.css for sliding behaviour
  *
  * @author    Ricardo Hildebrand <ricardo.hildebrand@votum.de>
  * @author    Thomas Heuer <thomas.heuer@votum.de>
- * @copyright Copyright (c) 2014 Votum media GmbH
- * @link      http://git.votum-media.net/vtm-frontend/page-transitions/tree/master
+ * @copyright Copyright (c) 2014 VOTUM media GmbH
+ * @link      https://github.com/votum/page-transitions
  *
- * @todo: page transitions as js module (https://github.com/umdjs/umd/blob/master/amdWeb.js)
- *
+ * @todo: page transitions as JS module (https://github.com/umdjs/umd/blob/master/amdWeb.js)
  */
 function pageTransition( userOptions ) {
 

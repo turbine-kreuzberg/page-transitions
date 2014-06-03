@@ -1,4 +1,4 @@
-# Votum Page Transition Plugin
+# VOTUM Page Transition Plugin
 
 An easy, small and lightweight Javascript plugin for page transitions / sliding pages on mobile websites.
 
